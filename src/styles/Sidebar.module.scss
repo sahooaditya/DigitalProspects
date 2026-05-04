@@ -1,0 +1,137 @@
+.sidebar {
+  height: 100vh;
+  width: 70px;
+  background: #eae3d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+/* TOP */
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+.active {
+  color: red;
+  transform: scale(1.1);
+  opacity: 2;
+}
+.menuBtn {
+  background: #ffb800;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  flex: 1;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Active Example */
+.icon:nth-child(4) {
+  color: red;
+}
+
+/* BOTTOM */
+.bottom {
+  padding: 20px 0;
+}
+
+.addBtn {
+  background: #ffb800;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* COLLAPSE STATE */
+.closed {
+  width: 60px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .open {
+    width: 80px;
+  }
+}
+/* ICON WRAPPER */
+.iconWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICON */
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* ACTIVE */
+.active .icon {
+  color: red;
+}
+
+/* TOOLTIP */
+.tooltip {
+  position: absolute;
+  left: 50px;
+  background: #333;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+
+  opacity: 0;
+  transform: translateY(-50%) translateX(-10px);
+  top: 50%;
+
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+
+/* SHOW TOOLTIP ON HOVER */
+.iconWrapper:hover .tooltip {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}

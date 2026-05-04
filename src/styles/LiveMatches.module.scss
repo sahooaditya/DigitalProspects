@@ -1,0 +1,70 @@
+.container {
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+}
+
+.active {
+  color: red;
+}
+
+/* Card */
+.card {
+  border: 2px solid #ffb800;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 10px;
+  background: #fff;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score {
+  text-align: center;
+
+  h1 {
+    margin: 5px 0;
+  }
+}
+
+.league {
+  font-size: 12px;
+  color: gray;
+}
+
+.time {
+  font-size: 12px;
+  color: orange;
+}
+
+.odds {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+
+  button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #f7f7f7;
+  }
+}

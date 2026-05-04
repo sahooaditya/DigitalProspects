@@ -1,0 +1,128 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4b400;
+  border-radius: 16px;
+  padding: 20px 40px;
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Player */
+.player {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+
+  img {
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+    left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* Content */
+.content {
+  flex: 1;
+  margin-left: 180px;
+
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+
+  @media (max-width: 768px) {
+    font-size: 22px;
+  }
+}
+
+.vsLine {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: black;
+  margin: 0 8px;
+}
+
+/* Match Info */
+.matchInfo {
+  margin-top: 12px;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+
+  span {
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
+}
+
+/* CTA */
+.cta {
+  text-align: right;
+
+  p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    strong {
+      font-size: 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Button */
+.btn {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

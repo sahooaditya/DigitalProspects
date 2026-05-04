@@ -1,0 +1,131 @@
+.container {
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  button {
+    border: 1px solid #ffb800;
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+}
+
+.viewAll {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* CARD */
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ffb800;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+/* Highlight (Top card) */
+.highlight {
+  background: #ffb800;
+  color: #fff;
+
+  .details {
+    color: #fff;
+  }
+}
+
+/* TEAMS */
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vs {
+  background: #000;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* INFO */
+.info {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heart {
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.liked {
+  color: red;
+  opacity: 1;
+}
+
+.details {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .info {
+    gap: 10px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

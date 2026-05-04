@@ -24,7 +24,9 @@
   .content {
     flex-direction: column;
   }
-
+  .main {
+    margin-left: 75px;
+  }
   .left {
     width: 100%;
   }

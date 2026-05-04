@@ -1,12 +1,19 @@
 .sidebar {
+  position: fixed; /* 🔥 important */
+  top: 0;
+  left: 0;
+
   height: 100vh;
   width: 70px;
   background: #eae3d6;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   transition: 0.3s;
+  z-index: 1000; /* stay above content */
 }
 /* TOP */
 .top {

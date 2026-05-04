@@ -1,6 +1,8 @@
 .main {
   flex: 1;
-  padding: 2px;
+  margin-left: 70px;
+  padding: 5px;
+  transition: 0.3s;
 }
 
 .content {

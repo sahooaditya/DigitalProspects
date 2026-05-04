@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/MatchBanner.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/MatchBanner.tsx"],
   "exclude": ["node_modules"]
 }

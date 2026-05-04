@@ -5,7 +5,7 @@ import styles from "../styles/Card.module.scss";
 import { useState } from "react";
 
 export default function MatchList() {
-  const [liked, setLiked] = useState([]);
+  const [liked, setLiked] = useState<number[]>([]);
 
   const matches = [
     {
@@ -56,7 +56,7 @@ export default function MatchList() {
     },
   ];
 
-  const toggleLike = (id) => {
+  const toggleLike = (id: number) => {
     setLiked((prev) => (prev.includes(id) ? prev.filter((i) => i !== id) : [...prev, id]));
   };
 
